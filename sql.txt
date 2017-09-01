@@ -1,0 +1,19 @@
+//Table Structure and queries
+//users table
+create table users(id integer PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                  email VARCHAR(255),
+                  phoneNumber VARCHAR(20),
+                  userPassword VARCHAR(100) NOT NULL,
+                  passwordSalt VARCHAR(100) NOT NULL);
+//sessions table
+CREATE TABLE sessions(access_token VARCHAR(200) NOT NULL);
+
+//students table
+CREATE TABLE student( id integer PRIMARY KEY NOT NULL AUTO_INCREMENT,
+                    	Name VARCHAR(200) NOT NULL,
+                    	DOB date NOT NULL,
+                    	Age integer NOT NULL,
+                    	school VARCHAR(200) NOT NULL,
+                    	class VARCHAR(5) NOT NULL,
+                    	DIVISION VARCHAR(5) NOT NULL,
+                    	studentStatus VARCHAR(15) NOT NULL);                    
